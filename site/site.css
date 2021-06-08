@@ -19,7 +19,9 @@ body {
     margin:0;
     
 }
-
+ .drop {
+  margin:auto;
+}
 .stars {
     margin:auto;
   display: block;
