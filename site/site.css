@@ -2,17 +2,18 @@
 body {
 
     background-color: black;
-    margin:0;
+
 
 }
  #drop {
-  margin:auto;
-  margin:auto;
+  
+  margin: 0 auto;
   display: block;
     max-width: 100%;
     height: auto;
 }
 #drop_img{
+  margin:0 auto;
   display: block;
 }
 
