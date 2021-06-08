@@ -21,7 +21,7 @@ function loopIt(times, min, max){
     }
 }
 
-setInterval(function(){ alert("Hello");
+setInterval(function(){ 
 drop.setAttribute('display', 'block');
 image.setAttribute('display', 'block');
     setTimeout(function(){
@@ -54,11 +54,11 @@ image.setAttribute('display', 'block');
     },random(1000, 1500) );
 
     setTimeout(function(){
-        loopIt(25, 10, 10000)
+        loopIt(50, 10, 4000)
     },random(25000, 50000) );
 
 
     drop.setAttribute('display', 'block');
     image.setAttribute('display', 'block');
 
-}, 3000);
+}, 120000);
