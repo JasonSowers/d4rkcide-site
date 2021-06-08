@@ -2,7 +2,7 @@ var drop = document.getElementById("#drop");
 
 var image = document.getElementById("#drop_img");
 
-function random (min, max) { // min and max included 
+function random(min, max) { // min and max included 
     return Math.floor(Math.random() * (max - min + 1) + min)
 }
 
