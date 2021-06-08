@@ -19,11 +19,14 @@ body {
     margin:0;
     margin:auto;
     display: block;
-      min-width: 50%;
-      max-width: 80%;;
+
 }
  .drop {
   margin:auto;
+  margin:auto;
+  display: block;
+    min-width: 50%;
+    max-width: 80%;
 }
 .stars {
     margin:auto;
