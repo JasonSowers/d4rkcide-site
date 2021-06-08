@@ -1,3 +1,4 @@
+window.onload = function(){
 var drop = document.getElementById("#drop");
 
 var image = document.getElementById("#drop_img");
@@ -62,3 +63,5 @@ image.setAttribute('display', 'block');
     image.setAttribute('display', 'block');
 
 }, 120000);
+
+}
