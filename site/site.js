@@ -1,13 +1,13 @@
-window.onload = function(){
+
 var drop = document.getElementById("#drop");
 
 var image = document.getElementById("#drop_img");
 
-function random(min, max) { // min and max included 
+var random = function (min, max) { 
     return Math.floor(Math.random() * (max - min + 1) + min)
 }
 
-function loopIt(times, min, max){
+var loopIt = function (times, min, max){
     for (let i = 0; i < times; i++) {
 
         setTimeout(function(){
@@ -22,6 +22,7 @@ function loopIt(times, min, max){
     }
 }
 
+var loaded = function(){
 setInterval(function(){ 
 drop.setAttribute('display', 'block');
 image.setAttribute('display', 'block');
@@ -65,3 +66,4 @@ image.setAttribute('display', 'block');
 }, 120000);
 
 }
+
