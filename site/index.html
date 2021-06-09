@@ -325,21 +325,19 @@
             do {
                 
                 $('#dropImage').css('display', 'block');canvas-dots
-                $('#canvas-dots').css('display', 'block');
+
                 $('#dropImage').css({ transform: `scale(${random(1, 15) / 10})` });
-                $('#canvas-dots').css({ transform: `scale(${random(1, 15) / 10})` });
+
                 ticks--
                 await sleep(random(min2, max2));
                 $('#dropImage').css('display', 'none');
                 $('#dropImage').css({ transform: `scale(${random(1, 11) / 10})` });
-                $('#canvas-dots').css('display', 'none');
-                $('#canvas-dots').css({ transform: `scale(${random(1, 11) / 10})` });
+
                 await sleep(random(min1, max1));
                 ticks--;
                 $('#dropImage').css('display', 'block');
                 $('#dropImage').css({ transform: `scale(${random(1, 11) / 10})` });
-                $('#canvas-dots').css('display', 'block');
-                $('#canvas-dots').css({ transform: `scale(${random(1, 11) / 10})` });
+
             } while (ticks > 0);
         };
 
