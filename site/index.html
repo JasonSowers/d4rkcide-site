@@ -32,15 +32,15 @@
             var ticks = ticks;
             do {
                 $('#dropImage').css('display', 'block');
-                $('#dropImage').css({ transform: `scale(${Math.random()})`});
+                $('#dropImage').css({ transform: `scale(${random(0, 1.1)})`});
                 ticks--
                 await sleep(random(min2, max2));
                 $('#dropImage').css('display', 'none');
-                $('#dropImage').css({ transform: `scale(${Math.random()})`});
+                $('#dropImage').css({ transform: `scale(${random(0, 1.1)})`});
                 await sleep(random(min1, max1));
                 ticks--;
                 $('#dropImage').css('display', 'block');
-                $('#dropImage').css({ transform: `scale(${Math.random()})`});
+                $('#dropImage').css({ transform: `scale(${random(0, 1.1)})`});
             } while (ticks > 0);
         };
 
