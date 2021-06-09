@@ -29,13 +29,13 @@
 }
 
        async function  start(ticks, min1, min2, max1, max2){
-            var ticks = 50;
+            var ticks = ticks;
                     do {
                         $('#dropImage').css('display', 'block');
                         ticks--
-                        await sleep(random(200, 2000));
+                        await sleep(random(min2, max2));
                         $('#dropImage').css('display', 'none');
-                        await sleep(random(min1, 250));
+                        await sleep(random(min1, max1));
                         ticks--;
                         $('#dropImage').css('display', 'block');
                     } while (ticks > 0);
