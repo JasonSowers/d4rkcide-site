@@ -27,7 +27,7 @@ canvas {
   position:absolute;
   width: 100%;
   z-index: 10;
-
+padding-top: 5%;
   top: 0;
   left: auto;
   margin: 0 auto;
