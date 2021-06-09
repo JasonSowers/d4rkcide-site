@@ -142,7 +142,7 @@
                 setInterval(function () {
                     breakNumber();
                     start(random(1, 100), random(1, 50), random(150, 300), random(51, 150), random(301, 500))
-                    
+
 
                 }, 2000)
             }
@@ -321,19 +321,32 @@
 
         async function start(ticks, min1, min2, max1, max2) {
             var ticks = ticks;
-            
+            var ticks2 = 100;
             do {
-                
+
+                $('#dropImage').css('display', 'block');
+
+                $('#dropImage').css({ transform: `scale(${random(1, 111) / 10})` });
+
+                ticks2--
+                await sleep(random(10, 50));
+
+
+            } while (ticks2 > 0);
+
+
+            do {
+
                 $('#dropImage').css('display', 'block');
 
                 $('#dropImage').css({ transform: `scale(${random(1, 15) / 10})` });
 
                 ticks--
-                await sleep(random(min2, max2));
+                await sleep(random(min1, max1));
                 $('#dropImage').css('display', 'none');
                 $('#dropImage').css({ transform: `scale(${random(1, 11) / 10})` });
 
-                await sleep(random(min1, max1));
+                await sleep(random(min2, max2));
                 ticks--;
                 $('#dropImage').css('display', 'block');
                 $('#dropImage').css({ transform: `scale(${random(1, 11) / 10})` });
