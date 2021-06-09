@@ -15,32 +15,3 @@ body {
   width: 100%;
   height: auto;
 }
-
-/* div.at-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-.at-item {
-  width: 100px;
-  height: 100px;
-  background-color:#ffe672;
-  animation-name: scale-up-center;
-  animation-duration: 10.2s;
-  animation-timing-function: ease;
-  animation-delay: 0s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-fill-mode: none;
-}
-@keyframes scale-up-center {
-  61%{
-    -webkit-transform: scale(.8);
-    transform: scale(.7);
-  }
-  100%{
-    -webkit-transform: scale(1.2);
-    transform: scale(1);
-  }
-} */
