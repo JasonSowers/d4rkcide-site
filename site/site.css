@@ -1,12 +1,12 @@
 
 body {
 
-    background-color: black;
+    background-color: rgb(1, 1, 1);
 
 
 }
  #drop {
-  
+  position:relative;
   margin: 0 auto;
   display: block;
     height: auto;
@@ -14,4 +14,34 @@ body {
 #dropImage{
   width: 100%;
   height: auto;
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh50XSwiPHA.ttf) format('truetype');
+}
+
+canvas {
+  position:absolute;
+  width: 100%;
+  z-index: 10;
+
+  top: 0;
+  left: auto;
+  margin: 0 auto;
+  display: block;
+    height: auto;
+}
+#canvas-number {
+  z-index: 1;
+  position:absolute;
+  margin: 0 auto;
+  display: block;
+    height: auto;
+    width: 100%;
+    height: auto;
+  /* width: 680px;
+  height: 420px; */
 }
