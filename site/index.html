@@ -13,38 +13,38 @@
     <link rel="shortcut icon" type="image/vnd.microsoft.icon">
     <link rel="stylesheet" href="./site.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    
+
 
 </head>
 
 <body>
     <div id="drop"><img id="dropImage" src="./the_drop.png" alt="waiting for the drop"></div>
     <script>
-                    function sleep(ms) {
-                return new Promise(resolve => setTimeout(resolve, ms));
-            }
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
 
-            var random = function (min, max) {    
-    return Math.floor(Math.random() * (max - min + 1) + min)
-}
+        var random = function (min, max) {
+            return Math.floor(Math.random() * (max - min + 1) + min)
+        }
 
-       async function  start(ticks, min1, min2, max1, max2){
+        async function start(ticks, min1, min2, max1, max2) {
             var ticks = ticks;
-                    do {
-                        $('#dropImage').css('display', 'block');
-                        ticks--
-                        await sleep(random(min2, max2));
-                        $('#dropImage').css('display', 'none');
-                        await sleep(random(min1, max1));
-                        ticks--;
-                        $('#dropImage').css('display', 'block');
-                    } while (ticks > 0);
+            do {
+                $('#dropImage').css('display', 'block');
+                ticks--
+                await sleep(random(min2, max2));
+                $('#dropImage').css('display', 'none');
+                await sleep(random(min1, max1));
+                ticks--;
+                $('#dropImage').css('display', 'block');
+            } while (ticks > 0);
         };
 
         setInterval(function () {
-            start(random(50, 1000), random(1, 100), random(250, 700), random(101,250 ), random(701,5000))
-        },2000)
-        
+            start(random(50, 1000), random(1, 100), random(250, 700), random(101, 250), random(701, 5000))
+        }, 2000)
+
     </script>
 </body>
 
